@@ -9,7 +9,6 @@ public class Cube : Shape
         moveSpeed = 40.0f;
         transform.Translate(Vector3.forward * moveSpeed * Input.GetAxis("Vertical") * Time.deltaTime);
         transform.Translate(Vector3.right * moveSpeed * Input.GetAxis("Horizontal") * Time.deltaTime);
-        
     }
 
     public override void Jump()
